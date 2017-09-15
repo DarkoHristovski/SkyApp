@@ -1,0 +1,55 @@
+/*lists*/
+
+.list{
+    margin-bottom:30px;
+}
+
+.list-feature{
+    margin:0;
+    padding: 0;
+    width:80%;
+    li{
+        line-height:3.6em;
+       @include add-border(1px, #cccccc, bottom);
+    }
+    
+    li:last-child{
+        border:0;
+    }
+    
+    span{
+   vertical-align:center;
+    font-size:20px;
+        padding:10px;
+         color:$dark-color;
+    }
+}
+
+.fa-primary{
+    color:$primary-color;
+   
+}
+
+.fa-border{
+     @include add-border(2px, $primary-color, all);
+    @include border-radius(5px);
+    padding:13px 15px;
+    width:70px;
+    margin-bottom: 10px;
+}
+
+/*Headings*/
+.heading-primary{
+    color:$primary-color;
+}
+.heading-secondary{
+    color:$secondary-color;
+}
+
+/*Headings*/
+.heading-light{
+    color:$light-color;
+}
+.heading-dark{
+    color:$dark-color;
+}

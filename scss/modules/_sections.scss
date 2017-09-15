@@ -1,0 +1,39 @@
+/*Sections*/
+
+section{
+    padding:50px 0px;;
+}
+.section-showcase{
+    height:$showcase-height;
+    background:url($showcase-image)no-repeat top center;
+
+
+.showcase-content{
+    padding:110px;
+    text-align: center;
+}
+    
+    h1{
+        color: $primary-color;
+    }
+}
+
+.section-primary{
+    @include add-background($primary-color);
+}
+
+.section-secondary{
+    @include add-background($secondary-color);
+}
+
+.section-light{
+    @include add-background($light-color);
+}
+
+.section-dark{
+    @include add-background($dark-color);
+}
+
+.section-primary{
+    padding:60px 0 0 0;
+}
